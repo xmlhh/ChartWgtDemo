@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_above="@+id/send_usr"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="15dp"
+        android:scrollbars="none"
+        android:background="@mipmap/bg_2"/>
+
+    <LinearLayout
+        android:id="@+id/send_usr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="#ffffff" >
+
+        <Button
+            android:id="@+id/btn_phonetics"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="语音"
+            android:textSize="17sp"
+            android:layout_weight="1" />
+
+        <EditText
+            android:id="@+id/edit_send"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="发送消息"
+            android:textColorHint="#95A1AA"
+            android:textColor="@android:color/black"
+            android:layout_weight="7" />
+
+        <Button
+            android:id="@+id/btn_emoticons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="表情"
+            android:textSize="17sp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发送"
+            android:textSize="17sp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+</RelativeLayout>
